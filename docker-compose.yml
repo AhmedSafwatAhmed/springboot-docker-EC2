@@ -1,0 +1,22 @@
+services:
+  app:
+    image: spring-boot-app-image
+    build: .
+    ports:
+      - "8080:80"
+  # environment:
+  #   - JAVA_OPTS=-Xmx256m
+
+  # db:
+  #   image: postgres:13
+  #   environment:
+  #     POSTGRES_DB: myapp
+  #     POSTGRES_USER: user
+  #     POSTGRES_PASSWORD: password
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - db_data:/var/lib/postgresql/data
+
+# volumes:
+#   db_data:
