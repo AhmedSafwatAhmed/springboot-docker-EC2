@@ -11,9 +11,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code 
-      - uses: actions/checkout@v4
+      - name: Check out code 
+        uses: actions/checkout@v4
       # commented out Maven build steps since Dockerfile handles the build
       ##- name: Set up JDK 17
         ##uses: actions/setup-java@v4
