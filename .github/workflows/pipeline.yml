@@ -32,5 +32,5 @@ jobs:
 
       - name: Push Docker Image to ECR
         run: |
-          #docker tag ${{secret.ECR_REPO }}:latest ${{secret.ECR_REPO }}:latest
-          docker push ${{secret.ECR_REPO }}:latest
+          docker tag ${{secrets.ECR_REPO }}:latest ${{secrets.ECR_REPO }}:latest
+          docker push ${{secrets.ECR_REPO }}:latest
